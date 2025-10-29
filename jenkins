@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('GitHub Clone') {
             steps {
-                git branch: 'hemanthproject2', url: 'https://github.com/Chey2266/project02.git''
+                git branch: 'hemanthproject2', credentialsId: 'git', url: 'https://github.com/Hemanthvenkatkola/hemanthproject2.git'
             }
         }
         stage('Build Maven') {
@@ -16,10 +16,10 @@ pipeline {
         }
         stage('Deploy Tomcat') {
             steps {
-                deploy adapters: [tomcat9(alternativeDeploymentContext: '',  credentialsId: 'c0264521-4691-4a27-b899-e1e134782a59',
-                path: '',
-                url: 'http://65.0.109.38:8080/')],
-                contextPath: 'project02',
+                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat', 
+                path: '', 
+                url: 'http://65.0.109.38:8080/')], 
+                contextPath: 'hemanthproject2', 
                 war: '**/*.war'
             }
         }
