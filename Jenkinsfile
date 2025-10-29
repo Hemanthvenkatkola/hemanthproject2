@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('GitHub Clone') {
             steps {
-                git branch: 'hemanthproject2', credentialsId: 'git', url: 'https://github.com/Hemanthvenkatkola/hemanthproject2.git'
+                git branch: 'hemanthproject2', url: 'https://github.com/Hemanthvenkatkola/hemanthproject2.git'
             }
         }
         stage('Build Maven') {
