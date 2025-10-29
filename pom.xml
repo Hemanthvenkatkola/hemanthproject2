@@ -3,8 +3,8 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.Chey2266</groupId>
-    <artifactId>project02</artifactId>
+    <groupId>com.github.Hemanthvenkatkola</groupId>
+    <artifactId>hemanthproject2</artifactId>
     <version>1.0-SNAPSHOT</version>
  
     <packaging>war</packaging>
